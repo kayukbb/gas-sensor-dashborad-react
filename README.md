@@ -1,21 +1,22 @@
 # TailAdmin React - Free React Tailwind Admin Dashboard Template
 
-TailAdmin is a free and open-source admin dashboard template built on **React and Tailwind CSS**, providing developers with everything they need to create a comprehensive, data-driven back-end, 
+TailAdmin is a free and open-source admin dashboard template built on **React and Tailwind CSS**, providing developers with everything they need to create a comprehensive, data-driven back-end,
 dashboard, or admin panel solution for upcoming web projects.
 
 [![tailwind react admin template](https://ucarecdn.com/d2a6daed-eb9c-4c2f-8a95-4419c450e23a/tailadminreact.jpg)](https://react-demo.tailadmin.com/)
-
 
 With TailAdmin, you get access to all the necessary dashboard UI components, elements, and pages required to build a feature-rich and complete dashboard or admin panel. Whether you're building dashboard or admin panel for a complex web application or a simple website, TailAdmin is the perfect solution to help you get up and running quickly.
 
 ### [✨ Visit Website](https://tailadmin.com/)
 
 ### [🚀 PRO Demo](https://react-demo.tailadmin.com/)
+
 ### [🚀 FREE Demo](https://free-react-demo.tailadmin.com/)
 
 ### TailAdmin React PRO vs TailAdmin React FREE Comparison 📊
 
 #### [TailAdmin React PRO](https://react-demo.tailadmin.com/)
+
 - 5 Unique Dashboards: Analytics, Ecommerce, Marketing, and CRM (More will be added)
 - 120+ Dashboard UI Components
 - 200+ Total UI Elements
@@ -23,17 +24,19 @@ With TailAdmin, you get access to all the necessary dashboard UI components, ele
 - All Essential Elements and Files
 - Full Figma Design Source - As Shown on Demo
 
-___
+---
 
 #### [TailAdmin React FREE](https://free-react-demo.tailadmin.com/)
+
 - 1 Unique Dashboard
 - 30+ Dashboard UI Components
-- 50+ Total UI Elements 
+- 50+ Total UI Elements
 - 10+ HTML Files
 - TypeScript Support
 - Basic UI Kit Elements and Files
 - Figma Design Source - Free Sample
-___
+
+---
 
 ### [⬇️ Download Now](https://tailadmin.com/download)
 
@@ -69,9 +72,8 @@ Default build output directory: /dist
 This command will generate a dist as build folder in the root of your template that you can upload to your server.
 
 ## Tons of React Tailwind Components for Dashboard
+
 React and Tailwind are two popular technologies that have taken the web development world by storm. React is a JavaScript library for building user interfaces, while Tailwind is a utility-first CSS framework that makes it easy to style web applications. TailAdmin React Offers 200+ Essential React + Tailwind CSS UI Components that you copy-paste and use with your dashboard projects. That includes - charts, graphs, navbars, tabs, buttons, cards, tables, profile, tabs, forms, modals, app pages, calender, web apps example templates and more... for React and Styled using Tailwind CSS
-
-
 
 ## Update Logs
 
@@ -99,3 +101,78 @@ React and Tailwind are two popular technologies that have taken the web developm
 ### Version 1.0.0 - Initial Release - [Mar 13, 2023]
 
 - Initial release of TailAdmin React.
+
+# Getting Started with Create React App
+
+### `npx create-react-app my-app`
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+### `npm install @mui/material @emotion/react @emotion/styled`
+
+install material
+
+### `git init`
+
+### `git remote add origin`
+
+connect to github project
+
+### `git branch -M main`
+
+### `git clone url`
+
+for copying git folder
+
+### `git `
+
+### `git add .`
+
+### `git commit -m "describe your change"`
+
+### `git push`
+
+pust file to github
+
+echo "# gas-sensor-dashborad" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/kayukbb/gas-sensor-dashborad.git
+git push -u origin main
+
+git remote add origin https://github.com/kayukbb/gas-sensor-dashborad.git
+git branch -M main
+git push -u origin main
