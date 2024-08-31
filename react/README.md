@@ -176,3 +176,9 @@ git push -u origin main
 git remote add origin https://github.com/kayukbb/gas-sensor-dashborad.git
 git branch -M main
 git push -u origin main
+
+# git push failed because of file size
+
+### `git config http.postBuffer 524288000`
+
+increase http buffer

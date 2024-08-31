@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-time Sensor Data</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Real-time Sensor Data</h1>
+    <div id="data-container"></div>
+    <canvas id="graph-container"></canvas>
+
+    <script>
+        // Fetch sensor values from the server and update the UI
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/sensorValues');
+                const sensorValues = await response.json();
+                const dataContainer = document.getElementById('data-container');
+
+                // Clear previous data
+                dataContainer.innerHTML = '';
+
+                // Display the latest sensor value in the data container
+                if (sensorValues.length > 0) {
+                    const latestSensorValue = sensorValues[sensorValues.length - 1];
+                    const valueElement = document.createElement('p');
+                    valueElement.textContent = `Sensor value: ${latestSensorValue.num}`;
+                    dataContainer.appendChild(valueElement);
+                }
+
+                // Get the sensor values for the graph
+                const graphData = sensorValues.map(sensorValue => sensorValue.num);
+
+                // Plot the graph
+                const graphContainer = document.getElementById('graph-container');
+                new Chart(graphContainer, {
+                    type: 'line',
+                    data: {
+                        labels: [...Array(graphData.length).keys()],
+                        datasets: [
+                            {
+                                label: 'Sensor Values',
+                                data: graphData,
+                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1
+                            }
+                        ]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('Error fetching sensor values:', error);
+            }
+        };
+
+        // Fetch data initially and then update every 5 seconds
+        fetchData();
+        setInterval(fetchData, 5000);
+    </script>
+</body>
+</html>

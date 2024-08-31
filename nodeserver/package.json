@@ -1,0 +1,28 @@
+{
+  "name": "socket-chat-example",
+  "version": "0.0.1",
+  "main": "server.js",
+  "dependencies": {
+    "@socket.io/cluster-adapter": "^0.2.2",
+    "api": "^6.1.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "moment": "^2.30.1",
+    "mongoose": "^6.3.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.1",
+    "rest": "^2.0.0",
+    "sequelize": "^6.37.1",
+    "socket.io": "^4.7.2",
+    "sqlite": "^5.0.1",
+    "sqlite3": "^5.1.6"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}

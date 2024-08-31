@@ -6,6 +6,7 @@ import ChartTwo from '../../components/Charts/ChartTwo';
 import ChatCard from '../../components/Chat/ChatCard';
 import MapOne from '../../components/Maps/MapOne';
 import TableOne from '../../components/Tables/TableOne';
+import RadialBarChart from '../../components/Charts/RadialBarChart';
 
 const ECommerce: React.FC = () => {
   return (
@@ -101,6 +102,7 @@ const ECommerce: React.FC = () => {
         <ChartOne />
         <ChartTwo />
         <ChartThree />
+        <RadialBarChart />
         <MapOne />
         <div className="col-span-12 xl:col-span-8">
           <TableOne />
