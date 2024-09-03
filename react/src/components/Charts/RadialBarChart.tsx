@@ -1,6 +1,7 @@
 import { ApexOptions } from 'apexcharts';
 import React, { useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
+import { Link } from 'react-router-dom';
 
 interface RadialBarChartState {
   series: number[];
@@ -115,10 +116,11 @@ const RadialBarChart: React.FC = () => {
             <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-primary"></span>
             <p className="flex w-full justify-between text-sm font-medium text-black dark:text-white">
               <span>Value</span>
-              <span>{state.series[0]}%</span>{' '}
+              <span>{state.series[0]}%</span>
               {/* Displaying the radial bar value */}
             </p>
           </div>
+          <Link to="/">Home</Link>
         </div>
       </div>
     </div>
