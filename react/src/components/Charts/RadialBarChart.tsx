@@ -1,5 +1,6 @@
 import { ApexOptions } from 'apexcharts';
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 import ReactApexChart from 'react-apexcharts';
 import { Link } from 'react-router-dom';
 
@@ -9,8 +10,41 @@ interface RadialBarChartState {
 
 const RadialBarChart: React.FC = () => {
   const [state, setState] = useState<RadialBarChartState>({
-    series: [100], // Example value, you can change this dynamically
+    series: [0], // Initialize with a default value
   });
+
+  const api = axios.create({
+    baseURL: 'http://localhost:3000/api', // Set the base URL here
+  });
+
+  // Function to fetch data from the backend API
+  const fetchData = async () => {
+    try {
+      const response = await api.get('gasReading'); // Adjust the endpoint as necessary
+      console.log('data is', response.data.reading1);
+
+      // Update the state with the new reading value
+      setState({ series: [response.data.reading1] }); // Update state here
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      throw error; // Rethrow to handle it later
+    }
+  };
+
+  useEffect(() => {
+    // Fetch data initially
+    fetchData();
+
+    // Set up an interval to fetch data every second
+    const intervalId = setInterval(() => {
+      fetchData(); // Fetch data on each interval
+    }, 1000); // 1000 ms = 1 second
+
+    // Cleanup function to clear the interval
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []); // Empty dependency array means this effect runs once on mount
 
   // Function to get color based on the value
   const getFillColor = (value: number) => {
