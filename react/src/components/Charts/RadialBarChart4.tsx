@@ -8,7 +8,7 @@ interface RadialBarChartState {
   series: number[];
 }
 
-const RadialBarChart: React.FC = () => {
+const RadialBarChart4: React.FC = () => {
   const [state, setState] = useState<RadialBarChartState>({
     series: [0], // Initialize with a default value
   });
@@ -21,10 +21,10 @@ const RadialBarChart: React.FC = () => {
   const fetchData = async () => {
     try {
       const response = await api.get('gasReading'); // Adjust the endpoint as necessary
-      console.log('data is', response.data.reading1);
+      //console.log('data is', response.data.reading4);
 
       // Update the state with the new reading value
-      setState({ series: [response.data.reading1] }); // Update state here
+      setState({ series: [response.data.reading4] }); // Update state here
     } catch (error) {
       console.error('Error fetching data:', error);
       throw error; // Rethrow to handle it later
@@ -130,7 +130,7 @@ const RadialBarChart: React.FC = () => {
     <div className="sm:px-7.5 col-span-6 rounded-sm border border-stroke bg-white px-5 pb-5 pt-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-5">
       <div>
         <h5 className="text-xl font-semibold text-black dark:text-white">
-          Gas Sensor 1
+          Gas Sensor 4
         </h5>
       </div>
 
@@ -161,4 +161,4 @@ const RadialBarChart: React.FC = () => {
   );
 };
 
-export default RadialBarChart;
+export default RadialBarChart4;

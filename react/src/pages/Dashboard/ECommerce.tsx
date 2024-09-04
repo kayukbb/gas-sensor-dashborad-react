@@ -6,7 +6,10 @@ import ChartTwo from '../../components/Charts/ChartTwo';
 import ChatCard from '../../components/Chat/ChatCard';
 import MapOne from '../../components/Maps/MapOne';
 import TableOne from '../../components/Tables/TableOne';
-import RadialBarChart from '../../components/Charts/RadialBarChart';
+import RadialBarChart1 from '../../components/Charts/RadialBarChart1';
+import RadialBarChart2 from '../../components/Charts/RadialBarChart2';
+import RadialBarChart3 from '../../components/Charts/RadialBarChart3';
+import RadialBarChart4 from '../../components/Charts/RadialBarChart4';
 import TestJson from '../../components/Charts/test';
 
 const ECommerce: React.FC = () => {
@@ -100,10 +103,13 @@ const ECommerce: React.FC = () => {
       </div> */}
 
       <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
-        {/*         <ChartOne />
-        <ChartTwo />
-        <ChartThree /> */}
-        <RadialBarChart />
+        <ChartOne />
+        {/*         <ChartTwo /> */}
+        {/*         <ChartThree /> */}
+        <RadialBarChart1 />
+        <RadialBarChart2 />
+        <RadialBarChart3 />
+        <RadialBarChart4 />
 
         {/*    <TestJson />     <MapOne />
          */}
