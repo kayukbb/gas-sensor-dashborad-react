@@ -14,8 +14,11 @@
     "url": "https://tailadmin.com"
   },
   "dependencies": {
+    "@mui/material": "^6.0.2",
+    "@mui/x-date-pickers": "^7.16.0",
     "apexcharts": "^3.41.0",
     "axios": "^1.7.7",
+    "dayjs": "^1.11.13",
     "flatpickr": "^4.6.13",
     "headlessui": "^0.0.0",
     "jsvectormap": "^1.5.3",
