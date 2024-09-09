@@ -160,6 +160,14 @@ const ChartOne: React.FC = () => {
         <div className="flex w-full flex-wrap gap-3 sm:gap-5"></div>
       </div>
       <div>
+        <div className="flex justify-end w-full">
+          <button
+            className="px-3 py-1 bg-blue-500 text-white rounded shadow hover:bg-blue-600"
+            onClick={fetchData}
+          >
+            Refresh
+          </button>
+        </div>
         <div id="chartOne" className="-ml-5">
           <ReactApexChart
             options={{

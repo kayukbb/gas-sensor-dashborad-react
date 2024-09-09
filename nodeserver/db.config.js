@@ -8,7 +8,7 @@ const pool = mysql2.createPool({
     password: 'password',
     database: 'fypproject',
     port: 3000,
-});
+});https://www.youtube.com/watch?v=L_vbvArDv1M&list=PL91gvBcdjUtbeAJEDWP_eEknED4el1afy&index=15
 
 // Create a Sequelize instance using the connection pool
 const sequelize = new Sequelize({
@@ -17,15 +17,15 @@ const sequelize = new Sequelize({
     pool: pool
 });*/
 module.exports = {
-  host: "localhost",
-  user: "root",
-  password: "password",
-  db: "fypproject",
-  dialect: "mysql",
+  host: 'localhost',
+  user: 'root',
+  password: 'alan06021',
+  db: 'gasSensor',
+  dialect: 'mysql',
   pool: {
     max: 5,
     min: 0,
     acquire: 30000,
-    idle: 10000
-  }
+    idle: 10000,
+  },
 };
