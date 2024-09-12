@@ -5,9 +5,4 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   base: '/gas-sensor-dashboard-react/',
-  server: {
-    mimeTypes: {
-      'application/javascript': ['js', 'mjs'],
-    },
-  },
 });
