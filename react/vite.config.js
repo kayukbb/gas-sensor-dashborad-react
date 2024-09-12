@@ -4,8 +4,5 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/gas-sensor-dashboard-react/',
-  build: {
-    outDir: 'dist',
-  },
+  base: '/gas-sensor-dashboard-react/react/dist/',
 });
