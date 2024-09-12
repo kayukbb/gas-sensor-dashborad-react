@@ -9,14 +9,5 @@
   <body>
     <div id="root"></div>
     <script type="module" src="./src/main.tsx"></script>
-    <script>
-      const scripts = document.getElementsByTagName('script');
-      const lastScript = scripts[scripts.length - 1];
-      const scriptSrc = lastScript.src;
-
-      console.log('Script path:', scriptSrc);
-      const rootDiv = document.getElementById('root');
-      rootDiv.innerText = `Script path: ${scriptSrc}`;
-    </script>
   </body>
 </html>
