@@ -154,7 +154,6 @@ const RadialBarChart2: React.FC = () => {
               {/* Displaying the radial bar value */}
             </p>
           </div>
-          <Link to="/">Home</Link>
         </div>
       </div>
     </div>
