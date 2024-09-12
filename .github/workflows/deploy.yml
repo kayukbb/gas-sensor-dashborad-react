@@ -36,7 +36,7 @@ jobs:
         working-directory: ./react # Set working directory to react
 
       - name: Build
-        run: vite build
+        run: npm run deploy
         working-directory: ./react # Set working directory to react
 
       - name: Setup Pages
