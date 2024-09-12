@@ -47514,8 +47514,8 @@ const K2 = () => (
         }),
       ],
     }),
-  nv = './cover-01-e8bbef04.png',
-  av = './myIcon-96a5a7b7.jpg',
+  nv = './assets/cover-01-e8bbef04.png',
+  av = './assets/myIcon-96a5a7b7.jpg',
   sv = () =>
     m.jsxs(m.Fragment, {
       children: [
