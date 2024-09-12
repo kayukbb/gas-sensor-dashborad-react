@@ -32,12 +32,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd gas-sensor-dashboard-react/react  # Navigate to the correct directory
+          cd react  # Navigate to the correct directory
           npm ci    # Install dependencies using package-lock.json
 
       - name: Build
         run: |
-          cd gas-sensor-dashboard-react/react  # Navigate to the correct directory
+          cd react  # Navigate to the correct directory
           npm run build  # Run the build command
 
       - name: Setup Pages
@@ -46,7 +46,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './gas-sensor-dashboard-react/react/dist' # Adjust this if necessary
+          path: './react/dist' # Adjust this if necessary
 
       - name: Deploy to GitHub Pages
         id: deployment
