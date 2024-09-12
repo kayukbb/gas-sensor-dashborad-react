@@ -47514,8 +47514,8 @@ const K2 = () => (
         }),
       ],
     }),
-  nv = './cover-01-e8bbef04.png',
-  av = './myIcon-96a5a7b7.jpg',
+  nv = './gas-sensor-dashborad-react/assets/cover-01-e8bbef04.png',
+  av = './gas-sensor-dashborad-react/assets/myIcon-96a5a7b7.jpg',
   sv = () =>
     m.jsxs(m.Fragment, {
       children: [
