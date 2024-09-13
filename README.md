@@ -1,7 +1,5 @@
 # Gas Sensor Dashboard
 
-![Gas Sensor Dashboard](https://kayukbb.github.io/gas-sensor-dashborad-react/images/screenshot.png) <!-- Replace with an actual image URL if available -->
-
 ## Demo
 
 You can view the live demo of the Gas Sensor Dashboard [here](https://kayukbb.github.io/gas-sensor-dashborad-react/).
@@ -23,10 +21,10 @@ This project is a web application built using **React** and **Vite** for the fro
 Here are some screenshots of the demo when running the Node.js server:
 
 #### Screenshot 1: Dashboard of Gas Sensors
-![Server Running](./gas.jpg) <!-- Replace with the path to your actual screenshot -->
+![Server Running](./gas.gif) <!-- Replace with the path to your actual screenshot -->
 
 #### Screenshot 2: Table View
-![Dashboard View](./table.jpg) <!-- Replace with the path to your actual screenshot -->
+![Dashboard View](./table.png) <!-- Replace with the path to your actual screenshot -->
 
 
 ## Installation
